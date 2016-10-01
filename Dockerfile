@@ -13,10 +13,12 @@ RUN apk update && \
         nginx \
         openssh \
         php5 \
+        php5-ctype \
         php5-curl \
         php5-fpm \
         php5-mysql \
         php5-xml \
+        php5-zlib \
         supervisor \
         tar \
         vim \
