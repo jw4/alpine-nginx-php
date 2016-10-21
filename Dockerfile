@@ -17,6 +17,7 @@ RUN apk update && \
         php5-curl \
         php5-fpm \
         php5-mysql \
+        php5-openssl \
         php5-xml \
         php5-zlib \
         supervisor \
