@@ -19,6 +19,7 @@ RUN apk update && \
         php5-mysql \
         php5-openssl \
         php5-xml \
+        php5-xmlreader \
         php5-zlib \
         supervisor \
         tar \
