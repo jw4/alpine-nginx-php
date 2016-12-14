@@ -25,7 +25,7 @@ RUN apk update && \
         tar \
         vim \
     && mkdir /etc/skel \
-    && (cd /etc/skel ; curl -sL https://github.com/johnweldon/tiny-profile/archive/v0.1.1.tar.gz | tar --strip-components 1 -xzf -) \
+    && (cd /etc/skel ; curl -sL https://github.com/johnweldon/tiny-profile/archive/v0.1.6.tar.gz | tar --strip-components 1 -xzf -) \
     && mkdir /run/nginx \
     && rm -rf /var/www/* \
     && rm -rf /var/cache/apk/*
