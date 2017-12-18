@@ -35,6 +35,7 @@ RUN sed -i -e 's/^short_open_tag = Off/short_open_tag = On/' /etc/php7/php.ini  
     sed -i -e 's/^max_execution_time = .*$/max_execution_time = 180/g' /etc/php7/php.ini    ; \
     sed -i -e 's/^post_max_size = .*$/post_max_size = 64M/g' /etc/php7/php.ini              ; \
     sed -i -e 's/^upload_max_filesize = .*$/upload_max_filesize = 64M/g' /etc/php7/php.ini  ; \
+    sed -i -e 's/^; max_input_vars = .*$/max_input_vars = 3000;/g' /etc/php7/php.ini  ; \
     sed -i -e 's/^;error_log = .*$/error_log = syslog/g' /etc/php7/php-fpm.conf              ; \
     sed -i -e 's/^#PasswordAuthentication yes$/PasswordAuthentication no/g' /etc/ssh/sshd_config
 
