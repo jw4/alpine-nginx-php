@@ -1,8 +1,9 @@
 FROM alpine:3.8
 
-MAINTAINER John Weldon <johnweldon4@gmail.com>
 
-LABEL Description="Alpine Based PHP Hosting" Vendor="John Weldon Consulting"
+LABEL maintainer="John Weldon <johnweldon4@gmail.com>" \
+  description="Alpine Based PHP Hosting" \
+  vendor="John Weldon Consulting"
 
 RUN apk update && \
     apk upgrade && \
