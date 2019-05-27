@@ -14,11 +14,21 @@ RUN apk update && \
         nginx \
         openssh \
         php7 \
+        php7-bcmath \
         php7-ctype \
         php7-curl \
+        php7-dom \
+        php7-exif \
+        php7-fileinfo \
         php7-fpm \
+        php7-gd \
+        php7-iconv \
+        php7-imagick \
+        php7-json \
         php7-mysqli \
         php7-openssl \
+        php7-posix \
+        php7-ssh2 \
         php7-xml \
         php7-xmlreader \
         php7-zip \
