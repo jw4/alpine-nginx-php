@@ -1,9 +1,9 @@
-FROM alpine:3.9
+FROM alpine:3
 
 
-LABEL maintainer="John Weldon <johnweldon4@gmail.com>" \
+LABEL maintainer="John Weldon <john@tempusbreve.com>" \
   description="Alpine Based PHP Hosting" \
-  vendor="John Weldon Consulting"
+  vendor="Tempus Breve Software"
 
 RUN apk update && \
     apk upgrade && \
