@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 CONTAINER_NAME="example"
-IMAGE=docker.jw4.us/alpine-nginx-php
+IMAGE=642837465750.dkr.ecr.us-west-2.amazonaws.com/alpine-nginx-php7
 SCRIPTPATH="$( cd "$(dirname "$0")"; pwd -P)"
 
 docker pull ${IMAGE}

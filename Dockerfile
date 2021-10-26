@@ -36,9 +36,9 @@ RUN apk update && \
         supervisor \
         tar \
         vim \
-    && mkdir /etc/skel \
+    && mkdir -p /etc/skel \
     && (cd /etc/skel ; curl -sL https://github.com/johnweldon/tiny-profile/archive/v0.1.9.tar.gz | tar --strip-components 1 -xzf -) \
-    && mkdir /run/nginx \
+    && mkdir -p /run/nginx \
     && rm -rf /var/www/* \
     && rm -rf /var/cache/apk/*
 

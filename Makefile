@@ -1,4 +1,4 @@
-IMAGE_NAME=docker.jw4.us/alpine-nginx-php7
+IMAGE_NAME=642837465750.dkr.ecr.us-west-2.amazonaws.com/alpine-nginx-php7
 IMAGE_FILE=Dockerfile
 IMAGE_DIR=.
 
