@@ -1,7 +1,10 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-export HOST_USER=$(getent passwd 1000 | awk -F : '{print $1}')
+set -eu -o pipefail
 
-addgroup nginx ${HOST_USER}
+HOST_USER=$(getent passwd 1000 | awk -F : '{print $1}')
+export HOST_USER
+
+addgroup nginx "${HOST_USER}"
 
 sed -i -e "s/user=weldon/user=${HOST_USER}/g" /conf/supervisord/*
