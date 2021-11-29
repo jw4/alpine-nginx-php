@@ -29,10 +29,14 @@ done
 
 for x in rsa dsa ecdsa ed25519; do
   f=ssh_host_${x}_key
-  if [ -f $f ] && [ -f $f.pub ]; then
-    cp -f $f /etc/ssh/$f
-    cp -f $f.pub /etc/ssh/$f.pub
+  if [ -f /etc/ssh/$f ]; then
+    echo "/etc/ssh/$f already exists"
   else
-    ssh-keygen -f /etc/ssh/$f -N '' -t $x
+    if [ -f $f ] && [ -f $f.pub ]; then
+      cp -f $f /etc/ssh/$f
+      cp -f $f.pub /etc/ssh/$f.pub
+    else
+      ssh-keygen -f /etc/ssh/$f -N '' -t $x
+    fi
   fi
 done
